@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html>
+      <head>
+
+      </head>
+      <body>
+      <h1>Game Search</h1>
+      <form name="gameform" id="gameform">
+        <label for="name">Name of Game</label>
+        <input type="text" name="name" id="name">
+        <button type="button" OnClick="getJson()">Submit Info</button>
+      </form>
+
+      </body>
+    </html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+
+{% endblock content %}

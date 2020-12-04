@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+    <header class="banner">
+        
+        <h1 class="header-text">Hi {{ current_user.username }} !!</h1>
+    </header>
+        
+        
+    <div class="container">
+    <h2>About Us</h2>
+    <p>Noobi helps gamers get past complex levels in games, and helps them complete trophies and achievements. Gamers can also look up strategy guides, and cheat codes for if they're available. </p>
+    </div>
+    
+</body>
+
+        
+
+    
+    {% if current_user.is_authenticated %}
+        {% for post in user_posts %}
+           
+        {% endfor %}
+    {% else %}
+    <h2>Nothing to show here...</h2>
+
+    {% endif %}
+{% endblock content %}
+
